@@ -50,17 +50,12 @@ class FavoriteAdapter(private val activity: Activity) : RecyclerView.Adapter<Fav
                     .into(itemView.item_avatar)
                 item_username.text = fav.username
                 item_name.text = fav.name
+
                 val dataUser = UserData(
-                    fav.username,
-                    fav.name,
-                    fav.avatar,
-                    fav.company,
-                    fav.location,
-                    fav.repository,
                     fav.followers,
-                    fav.following,
-                    fav.isFav
+                    fav.following
                 )
+
                 itemView.setOnClickListener (
                     CustomItemClick(
                         adapterPosition,
