@@ -16,30 +16,21 @@
         android:theme="@style/Theme.AplikasiGithubUser"
         tools:targetApi="31">
         <activity
-            android:name=".activity.SettingActivity"
+            android:name=".ui.activity.SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.FavoriteActivity"
+            android:name=".ui.activity.FavoriteActivity"
             android:exported="false" />
-
-        <provider
-            android:name=".provider.FavoriteProvider"
-            android:authorities="com.example.aplikasigithubuser"
-            android:enabled="true"
+        <activity
+            android:name=".ui.activity.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.SplashScreen"
             android:exported="true"
-            android:readPermission="com.example.aplikasigithubuser.READ_DATABASE"
-            android:writePermission="com.example.aplikasigithubuser.WRITE_DATABASE" />
-
-        <activity
-            android:name=".activity.DetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.SplashScreen"
-            android:exported="true"
-            android:noHistory="true">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

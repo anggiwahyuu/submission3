@@ -1,3 +1,0 @@
-package com.example.aplikasigithubuser.token
-
-const val ACCESS_TOKEN = "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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"

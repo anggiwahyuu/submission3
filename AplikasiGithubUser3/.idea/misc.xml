@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/drawable-v24/favorite_toggle.xml" value="0.155" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/drawable/favorite_toggle.xml" value="0.155" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/activity_detail.xml" value="0.22826086956521738" />
         <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/activity_favorite.xml" value="0.22826086956521738" />
-        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/activity_setting.xml" value="0.22826086956521738" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/activity_setting.xml" value="0.1" />
         <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/fragment_followers.xml" value="0.22826086956521738" />
         <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/fragment_following.xml" value="0.22826086956521738" />
         <entry key="..\:/Tugas Kuliah/Semester 5/Studi Independen/Android Fundamental/AplikasiGithubUser3/app/src/main/res/layout/row_user.xml" value="0.22826086956521738" />

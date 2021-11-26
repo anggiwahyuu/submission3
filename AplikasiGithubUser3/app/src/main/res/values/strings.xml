@@ -1,23 +1,19 @@
 <resources>
-    <string name="app_name">AplikasiGithubUser</string>
-    <string name="username">Username</string>
-    <string name="name">Name</string>
-    <string name="location">Location : %s </string>
-    <string name="repository">Repository: %s</string>
-    <string name="company">Company : %s </string>
-    <string name="followers">Followers</string>
-    <string name="following">Following</string>
-    <string name="avatar">Avatar</string>
-    <string name="dot">•</string>
-
-    <string name="search">Search</string>
-    <string name="favorite">Favorite</string>
-    <string name="setting">Setting</string>
-    <string name="dark_mode">Dark mode</string>
-
-    <string name="empty_favorite">Empty Data</string>
-    <string name="delete_favorite">"Hapus dari favorit"</string>
-    <string name="add_favorite">"Ditambahkan ke favorit"</string>
-
+    <string name="app_name">Aplikasi Github User</string>
     <string name="splash_text">Selamat Datang</string>
+    <string name="username">Username</string>
+    <string name="name">Nama</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="repository"> Repository</string>
+    <string name="followers"> Followers</string>
+    <string name="following"> Following</string>
+    <string name="dot">•</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="settings">Settings</string>
+    <string name="favorite">Favorite</string>
+    <string name="add_favorite">Ditambahkan ke Favorite</string>
+    <string name="delete_favorite">Dihapus dari Favorite</string>
 </resources>

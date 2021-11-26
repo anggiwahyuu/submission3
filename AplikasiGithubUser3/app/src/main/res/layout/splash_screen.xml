@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:background="@color/github_theme"
-    tools:context=".activity.SplashScreen">
+    tools:context=".ui.activity.SplashScreen">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/github_logo"
