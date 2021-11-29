@@ -1,5 +1,6 @@
 package com.example.aplikasigithubuser.ui.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val title: String = "GitHub User's Search"
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -28,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.title = title
 
-        val model = ViewModelProvider(this).get(MainViewModel::class.java)
+        val model = ViewModelProvider(this)[MainViewModel::class.java]
         val layoutManager = LinearLayoutManager(this)
         binding.userGithub.layoutManager = layoutManager
         val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
@@ -64,12 +66,12 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        model.getSearchUsers().observe(this, {
+        model.getSearchUsers().observe(this) {
             if (it != null) {
                 adapter.setList(it)
                 showLoading(false)
             }
-        })
+        }
 
     }
 
