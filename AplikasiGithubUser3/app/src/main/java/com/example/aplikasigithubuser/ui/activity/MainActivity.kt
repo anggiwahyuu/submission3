@@ -8,6 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.SearchView
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +17,8 @@ import com.example.aplikasigithubuser.adapter.UserAdapter
 import com.example.aplikasigithubuser.databinding.ActivityMainBinding
 import com.example.aplikasigithubuser.model.ItemsItem
 import com.example.aplikasigithubuser.ui.controller.MainViewModel
+import com.example.aplikasigithubuser.ui.controller.SettingViewModel
+import com.example.aplikasigithubuser.ui.controller.SettingViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,6 +41,17 @@ class MainActivity : AppCompatActivity() {
         val adapter = UserAdapter()
         adapter.notifyDataSetChanged()
         binding.userGithub.adapter = adapter
+
+        val pref = SettingPreference.getInstance(dataStore)
+        val settingViewModel = ViewModelProvider(this, SettingViewModelFactory(pref))[SettingViewModel::class.java]
+        settingViewModel.getThemeSettings().observe(this
+        ) { isDarkModeActive: Boolean ->
+            if (isDarkModeActive) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
 
         adapter.setOnItemClickCallback(object : UserAdapter.OnItemClickCallback {
             override fun onItemClicked(data: ItemsItem) {
